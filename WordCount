@@ -1,0 +1,27 @@
+package samplePrograms;
+import java.util.Scanner;
+
+public class WordCount {
+	public static int countWords(String sentence)
+	{
+		int count=1;
+		char[] sentArray=sentence.toCharArray();
+		for(char character: sentArray)
+		{
+			if(character==' ')
+			{
+				count++;
+			}
+		}
+		return count;
+	}
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String sentence=sc.nextLine();
+		int count=countWords(sentence);
+		System.out.println(count);
+		sc.close();
+	}
+
+}
