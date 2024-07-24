@@ -1,0 +1,21 @@
+package samplePrograms;
+import java.util.Arrays;
+
+public class ArraysAreEqual {
+	public static void main(String[] args) {
+        // Initialize two arrays
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {1, 2, 3, 4, 5};
+        int[] array3 = {5, 4, 3, 2, 1};
+        
+        // Check if array1 and array2 are equal
+        boolean areArraysEqual1 = Arrays.equals(array1, array2);
+        // Check if array1 and array3 are equal
+        boolean areArraysEqual2 = Arrays.equals(array1, array3);
+        
+        // Print the results
+        System.out.println("array1 and array2 are equal: " + areArraysEqual1);
+        System.out.println("array1 and array3 are equal: " + areArraysEqual2);
+    }
+
+}
