@@ -1,0 +1,30 @@
+package samplePrograms;
+import java.util.Scanner;
+
+public class HardcodedLoginClass {
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        String correctUsername = "admin";
+	        String correctPassword = "password123";
+	        
+	        String enteredUsername;
+	        String enteredPassword;
+	        boolean loginSuccess = false;
+	        do {
+	            System.out.print("Enter username: ");
+	            enteredUsername = scanner.nextLine();
+	            
+	            System.out.print("Enter password: ");
+	            enteredPassword = scanner.nextLine();
+	            
+	            if (enteredUsername.equals(correctUsername) && enteredPassword.equals(correctPassword)) {
+	                loginSuccess = true;
+	                System.out.println("Login successful!");
+	            } else {
+	                System.out.println("Incorrect username or password. Please try again.");
+	            }
+	        } while (!loginSuccess);
+	        scanner.close();
+	 }
+
+}
