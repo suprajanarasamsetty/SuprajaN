@@ -1,0 +1,15 @@
+package samplePrograms;
+
+public class ContainsClass {
+	public static void main(String[] args) {
+        String sentence = "Java is a programming language.";
+        String substring = "Java";
+        boolean containsSubstring = sentence.contains(substring);
+        if (containsSubstring) {
+            System.out.println("The sentence contains the substring: \"" + substring + "\"");
+        } else {
+            System.out.println("The sentence does not contain the substring: \"" + substring + "\"");
+        }
+    }
+
+}
