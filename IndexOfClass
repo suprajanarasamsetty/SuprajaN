@@ -1,0 +1,15 @@
+package samplePrograms;
+
+public class IndexOfClass {
+	public static void main(String[] args) {
+        String sentence = "Java is a versatile programming language.";
+        String substring = "versatile";
+        int index = sentence.indexOf(substring);
+        if (index != -1) {
+            System.out.println("The substring \"" + substring + "\" starts at index: " + index);
+        } else {
+            System.out.println("The substring \"" + substring + "\" was not found.");
+        }
+    }
+
+}
