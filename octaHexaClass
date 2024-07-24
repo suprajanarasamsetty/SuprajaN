@@ -1,0 +1,14 @@
+package samplePrograms;
+import java.util.Scanner;
+
+public class octaHexaClass {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String octNumber=sc.nextLine();
+		int decimalNumber=Integer.parseInt(octNumber,8);
+		String hexNumber=Integer.toHexString(decimalNumber).toUpperCase();
+		System.out.println(hexNumber);
+	}
+
+}
