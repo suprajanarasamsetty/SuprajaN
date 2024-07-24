@@ -1,0 +1,25 @@
+package samplePrograms;
+import java.util.Scanner;
+
+public class ReverseAString {
+	public static char[] reverseStr(String str)
+	{
+		char[] charArr=str.toCharArray();
+		for(int i=0,j=str.length()-1;i<j;i++,j--)
+		{
+			char temp=charArr[i];
+			charArr[i]=charArr[j];
+			charArr[j]=temp;
+		}
+		return charArr;		
+	}
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String str=sc.next();
+		char[] charArray=reverseStr(str);
+		String strArray=new String(charArray);
+		System.out.println(strArray);
+		sc.close();	
+	}
+}
